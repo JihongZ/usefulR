@@ -1,8 +1,8 @@
 #' Omega Reliability Function
 #'
-#' This function allows you to Calculate Omega Reliaility from Lavaan
-#' @param lavaanobject A Lavaan Object
-#' @keywords
+#' This function automate omega reliability from lavaan package
+#' @param lavaanobject a lavaan object using cfa() or sem(). Make sure the scaling method is z-score, marker variable scaling will make this function output different results.
+#' @keywords omega reliability
 #' @export
 #' @examples
 #' omega_reliability(model2)

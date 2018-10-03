@@ -18,3 +18,5 @@ This function allows you to save file compatible for MPlus
 write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
 
 }
+\keyword{csv}
+\keyword{mplus}

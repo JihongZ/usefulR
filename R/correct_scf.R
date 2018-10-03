@@ -2,7 +2,7 @@
 #'
 #' This function allows you to get fixed scaling correction factor HO for lavaan model to mimic Mplus
 #' @param lavaanmodel a lavaan object
-#' @keywords
+#' @keywords lavaan scale_factor
 #' @export
 #' @examples
 #' correct.scf(fit1)

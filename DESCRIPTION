@@ -1,7 +1,7 @@
 Package: usefulR
 Type: Package
 Title: A Package to store some useful functions for me
-Version: 0.1.0
+Version: 0.3.0
 Author: Jihong Zhang
 Maintainer: Jihong Zhang <jihong.zhang@ku.edu>
 Description: More about what it does (maybe more than one line)

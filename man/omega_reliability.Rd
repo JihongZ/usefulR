@@ -7,10 +7,10 @@
 omega_reliability(lavaanobject)
 }
 \arguments{
-\item{lavaanobject}{A Lavaan Object}
+\item{lavaanobject}{a lavaan object using cfa() or sem(). Make sure the scaling method is z-score, marker variable scaling will make this function output different results.}
 }
 \description{
-This function allows you to Calculate Omega Reliaility from Lavaan
+This function automate omega reliability from lavaan package
 }
 \examples{
 omega_reliability(model2)
@@ -19,3 +19,5 @@ omega_reliability(fa_bi)
 omega_reliability(fa1)
 omega_reliability(fa3)
 }
+\keyword{omega}
+\keyword{reliability}

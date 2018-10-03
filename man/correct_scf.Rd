@@ -16,3 +16,5 @@ This function allows you to get fixed scaling correction factor HO for lavaan mo
 correct.scf(fit1)
 
 }
+\keyword{lavaan}
+\keyword{scale_factor}

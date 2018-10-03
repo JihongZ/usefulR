@@ -7,7 +7,6 @@
 #' @examples
 #' reverse_code()
 
-library(dplyr)
 reverse_code <- function(variable) {
   N <- length(variable)
   max_value <- max(variable, na.rm = TRUE)
