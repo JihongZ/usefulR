@@ -14,11 +14,10 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 hello <- function() {
-  print("Hello, world!")
+  item1 <- sample(1:6, size=100, replace=TRUE)
+  item2 <- sample(1:6, size=100, replace=TRUE)
+  item3 <- sample(1:6, size=100, replace=TRUE)
+  SimpleEduData <- data.frame(item1, item2, item3)
+  devtools::use_data(SimpleEduData, overwrite = T)
 }
 
-# item1 <- rnorm(100, mean = 1, sd = 2)
-# item2 <- rnorm(100, mean = 1, sd = 2)
-# item3 <- rnorm(100, mean = 2, sd = 3)
-# SimpleEduData <- data.frame(item1, item2, item3)
-# devtools::use_data(SimpleEduData)
