@@ -1,19 +1,20 @@
-#' Omega Reliability Function
+#' Calculate Omega reliability values of factors
 #'
-#' This function automate omega reliability from lavaan package
-#' @param lavaanobject a lavaan object using cfa() or sem(). Make sure the scaling method is z-score, marker variable scaling will make this function output different results.
+#' This function automate calculating omega reliability from lavaan package
+#' @param object The lavaan model object provided after runing the 'cfa', 'sem', 'growth', or 'lavaan' functions.
 #' @keywords omega reliability
 #' @export
 #' @examples
-#' omega_reliability(model2)
-#' omega_reliability(model1)
-#' omega_reliability(fa_bi)
-#' omega_reliability(fa1)
-#' omega_reliability(fa3)
+#' library(dplyr)
+#' HS.model <- ' visual  =~ x1 + x2 + x3
+#'               textual =~ x4 + x5 + x6
+#'               speed   =~ x7 + x8 + x9 '
+#' fit <- cfa(HS.model, data=HolzingerSwineford1939)
+#' omega_reliability(fit)
 
-omega_reliability <- function(lavaanobject) {
-  estimates <- parameterestimates(lavaanobject)
-  factors <- lavaanNames(lavaanobject, "lv")
+omega_reliability <- function(object) {
+  estimates <- parameterestimates(object)
+  factors <- lavaanNames(object, "lv")
   ome_calculate <- function(factor) {
     # factor loadings
     factor_loadings <- estimates %>% filter(lhs == factor, op == "=~")

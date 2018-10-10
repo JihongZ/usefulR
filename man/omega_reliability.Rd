@@ -4,20 +4,21 @@
 \alias{omega_reliability}
 \title{Omega Reliability Function}
 \usage{
-omega_reliability(lavaanobject)
+omega_reliability(object)
 }
 \arguments{
-\item{lavaanobject}{a lavaan object using cfa() or sem(). Make sure the scaling method is z-score, marker variable scaling will make this function output different results.}
+\item{object}{The lavaan model object provided after runing the 'cfa', sem, growth, or lavaan functions.}
 }
 \description{
-This function automate omega reliability from lavaan package
+This function automate calculating omega reliability from lavaan package
 }
 \examples{
-omega_reliability(model2)
-omega_reliability(model1)
-omega_reliability(fa_bi)
-omega_reliability(fa1)
-omega_reliability(fa3)
+library(dplyr)
+HS.model <- ' visual  =~ x1 + x2 + x3
+              textual =~ x4 + x5 + x6
+              speed   =~ x7 + x8 + x9 '
+fit <- cfa(HS.model, data=HolzingerSwineford1939)
+omega_reliability(fit)
 }
 \keyword{omega}
 \keyword{reliability}
