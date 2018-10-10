@@ -2,12 +2,12 @@
 % Please edit documentation in R/omega_relaibility.R
 \name{omega_reliability}
 \alias{omega_reliability}
-\title{Omega Reliability Function}
+\title{Calculate Omega reliability values of factors}
 \usage{
 omega_reliability(object)
 }
 \arguments{
-\item{object}{The lavaan model object provided after runing the 'cfa', sem, growth, or lavaan functions.}
+\item{object}{The lavaan model object provided after runing the 'cfa', 'sem', 'growth', or 'lavaan' functions.}
 }
 \description{
 This function automate calculating omega reliability from lavaan package
