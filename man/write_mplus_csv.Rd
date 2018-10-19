@@ -2,7 +2,7 @@
 % Please edit documentation in R/write_mplus_csv.R
 \name{write_mplus_csv}
 \alias{write_mplus_csv}
-\title{Write CSV file for Mplus Function}
+\title{Save CSV file compatible for Mplus}
 \usage{
 write_mplus_csv(data, file)
 }
@@ -12,11 +12,15 @@ write_mplus_csv(data, file)
 \item{file}{the filename you want to save}
 }
 \description{
-This function allows you to save file compatible for MPlus
+\code{write_mplus_csv} allows you to save file compatible for MPlus. Specifically,
+headers will be removed.
 }
 \examples{
 write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
 
+}
+\seealso{
+This function wraps up \code{\link[utils]{write.table}}.
 }
 \keyword{csv}
 \keyword{mplus}
