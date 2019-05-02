@@ -7,9 +7,9 @@
 write_mplus_csv(data, file)
 }
 \arguments{
-\item{data}{a dataframe}
+\item{data}{A dataframe stored in R.}
 
-\item{file}{the filename you want to save}
+\item{file}{Tha abosulte path of saved file.}
 }
 \description{
 \code{write_mplus_csv} allows you to save file compatible for MPlus. Specifically,
