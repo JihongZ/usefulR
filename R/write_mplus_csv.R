@@ -12,6 +12,6 @@
 #'
 
 write_mplus_csv <- function(data, file) {
-  write.table(data, file = file, sep=",", col.names = FALSE)
+  write.table(data, file = file, sep=",", col.names = FALSE, row.names = FALSE)
 }
 
