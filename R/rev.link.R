@@ -5,8 +5,8 @@
 #' @author Jihong Zhang
 #' @keywords Link Function
 #' @export
-#' @examples
 
 rev.link <- function(logofOdds) {
   mu = exp(logofOdds) / (1 + exp(logofOdds))
+  return(mu)
 }
