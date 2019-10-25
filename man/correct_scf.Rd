@@ -13,7 +13,7 @@ correct_scf(lavaanmodel)
 This function allows you to get fixed scaling correction factor HO for lavaan model to mimic Mplus
 }
 \examples{
-correct.scf(fit1)
+correct_scf(fit1)
 
 }
 \keyword{lavaan}
