@@ -12,12 +12,9 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
+#' @useDynLib usefulR, .registration = TRUE
 
-hello <- function() {
-  item1 <- sample(1:6, size=100, replace=TRUE)
-  item2 <- sample(1:6, size=100, replace=TRUE)
-  item3 <- sample(1:6, size=100, replace=TRUE)
-  SimpleEduData <- data.frame(item1, item2, item3)
-  devtools::use_data(SimpleEduData, overwrite = T)
+hello <- function(a, b) {
+  plusC(a, b)
 }
 

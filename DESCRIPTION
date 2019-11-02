@@ -11,7 +11,11 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports: 
-  dplyr,
-  tidyr,
-  ggplot2,
-  devtools
+    Rcpp,
+    dplyr,
+    tidyr,
+    ggplot2,
+    devtools,
+    R2jags,
+    rjags
+LinkingTo: Rcpp
