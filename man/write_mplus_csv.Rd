@@ -16,7 +16,10 @@ write_mplus_csv(data, file)
 headers will be removed.
 }
 \examples{
+\dontrun{
 write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
+}
+
 
 }
 \seealso{

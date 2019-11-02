@@ -13,12 +13,14 @@ omega_reliability(object)
 This function automate calculating omega reliability from lavaan package
 }
 \examples{
+\dontrun{
 library(dplyr)
 HS.model <- ' visual  =~ x1 + x2 + x3
               textual =~ x4 + x5 + x6
               speed   =~ x7 + x8 + x9 '
 fit <- cfa(HS.model, data=HolzingerSwineford1939)
 omega_reliability(fit)
+}
 }
 \keyword{omega}
 \keyword{reliability}

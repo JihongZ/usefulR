@@ -12,7 +12,4 @@ reverse_code(variable)
 \description{
 This function allows you to reverse coding your vector (Max to Min)
 }
-\examples{
-reverse_code()
-}
 \keyword{cats}

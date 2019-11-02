@@ -8,7 +8,10 @@
 #' @export
 #' @seealso This function wraps up \code{\link[utils]{write.table}}.
 #' @examples
+#' \dontrun{
 #' write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
+#' }
+#'
 #'
 
 write_mplus_csv <- function(data, file) {

@@ -6,7 +6,10 @@
 #' @keywords frequency table
 #' @export
 #' @examples
+#' \dontrun{
 #' write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
+#' }
+#'
 #'
 
 frequency_table <- function(data) {

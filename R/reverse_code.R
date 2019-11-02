@@ -4,8 +4,7 @@
 #' @param variable A numerical vector
 #' @keywords cats
 #' @export
-#' @examples
-#' reverse_code()
+
 
 reverse_code <- function(variable) {
   N <- length(variable)

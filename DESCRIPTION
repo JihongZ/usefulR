@@ -17,5 +17,6 @@ Imports:
     ggplot2,
     devtools,
     R2jags,
-    rjags
+    rjags,
+    lavaan
 LinkingTo: Rcpp

@@ -5,12 +5,14 @@
 #' @keywords omega reliability
 #' @export
 #' @examples
+#' \dontrun{
 #' library(dplyr)
 #' HS.model <- ' visual  =~ x1 + x2 + x3
 #'               textual =~ x4 + x5 + x6
 #'               speed   =~ x7 + x8 + x9 '
 #' fit <- cfa(HS.model, data=HolzingerSwineford1939)
 #' omega_reliability(fit)
+#' }
 
 omega_reliability <- function(object) {
   estimates <- parameterestimates(object)

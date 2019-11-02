@@ -13,7 +13,10 @@ correct_scf(lavaanmodel)
 This function allows you to get fixed scaling correction factor HO for lavaan model to mimic Mplus
 }
 \examples{
+\dontrun{
 correct_scf(fit1)
+}
+
 
 }
 \keyword{lavaan}

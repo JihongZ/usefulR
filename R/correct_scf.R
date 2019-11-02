@@ -5,7 +5,10 @@
 #' @keywords lavaan scale_factor
 #' @export
 #' @examples
+#' \dontrun{
 #' correct_scf(fit1)
+#' }
+#'
 #'
 correct_scf <- function(lavaanmodel){
   parms_fewer = fitmeasures(lavaanmodel)["npar"]
