@@ -18,5 +18,6 @@ Imports:
     devtools,
     R2jags,
     rjags,
-    lavaan
+    lavaan,
+    gganimate
 LinkingTo: Rcpp
