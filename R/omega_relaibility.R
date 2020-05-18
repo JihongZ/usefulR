@@ -19,18 +19,18 @@ omega_reliability <- function(object) {
   factors <- lavaanNames(object, "lv")
   ome_calculate <- function(factor) {
     # factor loadings
-    factor_loadings <- estimates %>% filter(lhs == factor, op == "=~")
+    factor_loadings <- estimates %>% dplyr::filter(lhs == factor, op == "=~")
     # indicators for factor 1
     indicators <- unique(factor_loadings$rhs)
     # error variances
-    error_variances_covariances <- estimates %>% filter(lhs %in% as.character(indicators))
-    error_variances <- error_variances_covariances %>% filter(lhs == rhs)
-    error_covariances <- error_variances_covariances %>% filter(!(lhs==rhs))
+    error_variances_covariances <- estimates %>% dplyr::filter(lhs %in% as.character(indicators))
+    error_variances <- error_variances_covariances %>% dplyr::filter(lhs == rhs)
+    error_covariances <- error_variances_covariances %>% dplyr::filter(!(lhs==rhs))
     ## output omega result
     if (nrow(error_covariances) == 0) {
       res <- (sum(factor_loadings$est)^2)/((sum(factor_loadings$est)^2)+sum(error_variances$est))
     }else{
-      res <- (sum(factor_loadings$est)^2)/((sum(factor_loadings$est)^2)+sum(error_variances$est)+2*error_covariances$est)
+      res <- (sum(factor_loadings$est)^2)/((sum(factor_loadings$est)^2)+sum(error_variances$est)+2*sum(error_covariances$est))
 
     }
     return(res)
