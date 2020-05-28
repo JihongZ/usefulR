@@ -14,7 +14,7 @@
 
 frequency_table <- function(data) {
   do.call(bind_rows, lapply(data, function(x){
-    table(x)
+    table(x, useNA = 'always')
     })) %>%
     t()
 }
