@@ -16,9 +16,8 @@ This function allows you to save file compatible for MPlus
 }
 \examples{
 \dontrun{
-write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
+  frequency_table(mtcars)
 }
-
 
 }
 \keyword{frequency}

@@ -7,16 +7,23 @@
 #' @export
 #' @examples
 #' \dontrun{
-#' write_mplus_csv(mtcars, file="~/Desktop/mtcars.csv")
+#'   frequency_table(mtcars)
 #' }
-#'
 #'
 
 frequency_table <- function(data) {
-  do.call(bind_rows, lapply(data, function(x){
-    table(x, useNA = 'always')
-    })) %>%
-    t()
+
+  # include only numeric variables
+  dt <- data[sapply(data, is.numeric)]
+  dt2 <- data[!sapply(data, is.numeric)]
+  summaries <- as.data.frame(do.call(dplyr::bind_rows, lapply(dt, function(x){ summary(x) })))
+  frequncy_table <- do.call(bind_rows, lapply(dt2, function(x){ table(x, useNA = 'always')})) %>% t()
+  rownames(summaries) <- colnames(dt); colnames(frequncy_table) <- colnames(dt2)
+  return(list(summaries = summaries, frequncy_table = frequncy_table))
 }
 
-
+# t(sapply(mtcars, summary))
+# colnames(mtcars)
+# frequency_table(iris)
+# iris[sapply(iris, is.numeric)] %>% head()
+# data = iris
