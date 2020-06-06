@@ -1,8 +1,9 @@
-# usefulR
-A R package storing some useful functions
 
-# Installation
-```
-require(devtools)
-install_github("jihongz/usefulR")
-```
+# StanDCM
+
+[![Travis build
+status](https://travis-ci.org/JihongZ/usefulR.svg?branch=master)](https://travis-ci.org/JihongZ/usefulR)
+
+## Overview
+
+**usefulR** is a helpful toolbox for Jihong.

@@ -1,0 +1,22 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+  )
+```
+
+# StanDCM
+
+[![Travis build status](https://travis-ci.org/JihongZ/usefulR.svg?branch=master)](https://travis-ci.org/JihongZ/usefulR)
+
+## Overview
+__usefulR__ is a helpful toolbox for Jihong.
+
+
+
