@@ -1,6 +1,8 @@
 #' Create a blogdown post quickly
 #'
 #' This will trash any non-master branch installs, and spend time re-installing the packages
+#' @param lang the language of the post
+#' @import utils
 #' @keywords lavaan scale_factor
 #' @export
 

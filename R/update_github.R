@@ -2,9 +2,12 @@
 #'
 #' This will trash any non-master branch installs, and spend time re-installing the packages
 #' @keywords lavaan scale_factor
+#' @import utils
+#' @import devtools
 #' @export
 #'
 update_github <- function() {
+  # binding global variable
   pkgs = loadedNamespaces()
   print(pkgs)
   desc <- lapply(pkgs, packageDescription, lib.loc = NULL)

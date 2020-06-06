@@ -6,6 +6,9 @@
 \usage{
 newpost(lang = "en")
 }
+\arguments{
+\item{lang}{the language of the post}
+}
 \description{
 This will trash any non-master branch installs, and spend time re-installing the packages
 }

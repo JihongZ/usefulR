@@ -5,6 +5,7 @@
 #' @param data A dataframe stored in R.
 #' @param file Tha abosulte path of saved file.
 #' @keywords mplus csv
+#' @import utils
 #' @export
 #' @seealso This function wraps up \code{\link[utils]{write.table}}.
 #' @examples

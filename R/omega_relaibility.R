@@ -3,6 +3,8 @@
 #' This function automate calculating omega reliability from lavaan package
 #' @param object The lavaan model object provided after runing the 'cfa', 'sem', 'growth', or 'lavaan' functions.
 #' @keywords omega reliability
+#' @import lavaan
+#' @import dplyr
 #' @export
 #' @examples
 #' \dontrun{
@@ -15,6 +17,8 @@
 #' }
 
 omega_reliability <- function(object) {
+  # binding global variables
+  lhs <- op <- rhs <- NULL
   estimates <- parameterestimates(object)
   factors <- lavaanNames(object, "lv")
   ome_calculate <- function(factor) {

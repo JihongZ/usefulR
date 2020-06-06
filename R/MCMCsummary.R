@@ -2,6 +2,7 @@
 #'
 #' A function to report the summary table of mcmc object
 #' @param mcmcObj mcmc.list object
+#' @importFrom  coda gelman.diag
 #' @export
 #'
 #'

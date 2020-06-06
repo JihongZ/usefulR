@@ -6,7 +6,7 @@
 #' @keywords Link Function
 #' @export
 
-rev.link <- function(logofOdds) {
+rev_link <- function(logofOdds) {
   mu = exp(logofOdds) / (1 + exp(logofOdds))
-  return(mu)
+  mu
 }

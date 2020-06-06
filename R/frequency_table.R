@@ -2,8 +2,8 @@
 #'
 #' This function allows you to save file compatible for MPlus
 #' @param data a dataframe
-#' @param file the filename you want to save
 #' @keywords frequency table
+#' @importFrom rlang .data
 #' @export
 #' @examples
 #' \dontrun{
@@ -22,8 +22,3 @@ frequency_table <- function(data) {
   return(list(summaries = summaries, frequncy_table = frequncy_table))
 }
 
-# t(sapply(mtcars, summary))
-# colnames(mtcars)
-# frequency_table(iris)
-# iris[sapply(iris, is.numeric)] %>% head()
-# data = iris

@@ -8,8 +8,6 @@ frequency_table(data)
 }
 \arguments{
 \item{data}{a dataframe}
-
-\item{file}{the filename you want to save}
 }
 \description{
 This function allows you to save file compatible for MPlus

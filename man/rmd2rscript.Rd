@@ -7,12 +7,13 @@
 \usage{
 rmd2rscript(infile)
 }
+\arguments{
+\item{infile}{The file path needed to be transformed
+The function is quite simplisting in that it reads a .Rmd file and adds
+comments to non-r code sections, while leaving R code without comments
+so that the interpreter can run the commands.}
+}
 \description{
 This function will read a standard R markdown source file and convert it to
 an R script to allow the code to be run using the "source" function.
-}
-\details{
-The function is quite simplisting in that it reads a .Rmd file and adds
-comments to non-r code sections, while leaving R code without comments
-so that the interpreter can run the commands.
 }
