@@ -1,2 +1,17 @@
 language: R
+cache: packages
+sudo: true
+warnings_are_errors: false
+
+before_install:
+  - sudo apt-get install jags
+  - sudo apt-get install r-cran-rjags
+
+r:
+  - release
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
 
