@@ -1,7 +1,9 @@
 #' Generate Frequency Function
 #'
-#' This function allows you to save file compatible for MPlus
+#' @title Useful functions to manipulate datasets.
+#'
 #' @param data a dataframe
+#' @describeIn useful_dt frequency_table is a function to summarize data
 #' @keywords frequency table
 #' @importFrom rlang .data
 #' @export
@@ -22,3 +24,10 @@ frequency_table <- function(data) {
   return(list(summaries = summaries, frequncy_table = frequncy_table))
 }
 
+#' @param x the value to be tested
+#' @param y the vector to be tested
+#' @describeIn useful_dt %!in% means x not in y. Similar to !%in%
+#' @export
+`%!in%` <- function(x, y){
+  !(`%in%`(x, y))
+}
