@@ -35,7 +35,6 @@ omega_reliability <- function(object) {
       res <- (sum(factor_loadings$est)^2)/((sum(factor_loadings$est)^2)+sum(error_variances$est))
     }else{
       res <- (sum(factor_loadings$est)^2)/((sum(factor_loadings$est)^2)+sum(error_variances$est)+2*sum(error_covariances$est))
-
     }
     return(res)
   }
