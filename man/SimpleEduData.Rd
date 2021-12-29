@@ -4,12 +4,14 @@
 \name{SimpleEduData}
 \alias{SimpleEduData}
 \title{Prices of 50,000 round cut diamonds.}
-\format{A data frame with 100 rows and 3 variables:
+\format{
+A data frame with 100 rows and 3 variables:
 \describe{
   \item{item1}{min 1, max 6}
   \item{item2}{min 1, max 6}
   \item{item3}{min 1, max 6}
-}}
+}
+}
 \source{
 \url{http://www.diamondse.info/}
 }
