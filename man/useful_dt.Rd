@@ -21,11 +21,11 @@ Generate Frequency Function
 }
 \section{Functions}{
 \itemize{
-\item \code{frequency_table}: frequency_table is a function to summarize data
+\item \code{frequency_table()}: frequency_table is a function to summarize data
 
-\item \code{\%!in\%}: %!in% means x not in y. Similar to !%in%
+\item \code{x \%!in\% y}: %!in% means x not in y. Similar to !%in%
+
 }}
-
 \examples{
 \dontrun{
   frequency_table(mtcars)
